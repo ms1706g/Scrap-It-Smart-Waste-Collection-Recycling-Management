@@ -1,0 +1,96 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light Blue */
+}
+
+header {
+    background-color: #4169e1; /* Blue */
+    padding: 100px; /* Increased padding */
+    display: flex;
+    justify-content: space-between; /* Align items to the right */
+    align-items: flex-start;
+    height: 0px;
+}
+
+
+nav {
+    position: absolute;
+    top: 90px; /* Move the buttons down */
+    right: 20px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    background-color: rgb(235, 219, 70); /* Set background color to yellow */
+    color: #000; /* Set text color to black for better readability */
+    padding: 10px 15px; /* Add some padding for better appearance */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Add rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: rgb(241, 80, 80); /* Set background color to red on hover */
+    color: #fff; /* Set text color to white on hover for better contrast */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+.container {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.video-item {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+}
+
+.video-item iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+}
+
+.article-item {
+    background-color: #eeea7b;
+    padding: 15px;
+    border-radius: 10px;
+}
+.logo {
+    width: 250px; /* Adjust the size as needed */
+    position: absolute;
+    top: -25px;
+    bottom: auto;
+    padding-bottom: 30%;
+    left: 1px;
+}
+footer {
+    background-color: #4169e1; /* Blue background color */
+    color: white;
+    text-align: center;
+    padding: 30px; /* Increase padding */
+}

@@ -1,0 +1,138 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    margin: 0;
+    background-color: #f8f8f8;
+}
+
+/* Header Styles */
+header {
+    background-color: #4169e1; /* Blue */
+    padding: 100px; /* Increased padding */
+    display: flex;
+    justify-content: space-between; /* Align items to the right */
+    align-items: flex-start;
+    height: 80px;
+}
+
+
+.logo img {
+    width: 250px; /* Adjust the size as needed */
+    position: absolute;
+    top: -25px;
+    bottom: auto;
+    padding-bottom: 30%;
+    left: 1px;
+}
+
+nav {
+    position: absolute;
+    top: 90px; /* Move the buttons down */
+    right: 20px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    background-color: rgb(235, 219, 70); /* Set background color to yellow */
+    color: #000; /* Set text color to black for better readability */
+    padding: 10px 15px; /* Add some padding for better appearance */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Add rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: rgb(241, 80, 80); /* Set background color to red on hover */
+    color: #fff; /* Set text color to white on hover for better contrast */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+/* Main Section Styles */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+hr {
+    border: none;
+    height: 10px;
+    background-color: #ffffff; /* Light blue */
+}
+
+.form-container {
+    text-align: center;
+}
+
+.form-container table {
+    width: 25%;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #1033d1;
+    border-radius: 5px;
+}
+
+form .hey {
+    background-color: #4169e1; /* Blue */
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer {
+    background-color: #4169e1; /* Blue color */
+    color: white; /* Text color */
+    text-align: center; /* Center-align the text */
+    padding: 30px; /* Add some padding for spacing */
+}
+.contact-header {
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+    animation: textAnimation 2s infinite alternate; /* Apply animation */
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: scale(1); /* Initial scale */
+        color: #333; /* Initial color */
+    }
+    50% {
+        transform: scale(1.1); /* Scale up */
+        color: #4169e1; /* Change color */
+    }
+    100% {
+        transform: scale(1); /* Back to normal scale */
+        color: #333; /* Back to initial color */
+    }
+}
+

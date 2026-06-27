@@ -1,0 +1,182 @@
+
+/* Header Styles */
+header {
+    background-color: #4169e1; /* Blue */
+    padding: 100px; /* Increased padding */
+    display: flex;
+    justify-content: space-between; /* Align items to the right */
+    align-items: flex-start;
+    height:0px;
+}
+
+/* Navigation Styles */
+nav {
+    position: absolute;
+    top: 90px; /* Move the buttons down */
+    right: 20px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    background-color: rgb(235, 219, 70); /* Set background color to yellow */
+    color: #000; /* Set text color to black for better readability */
+    padding: 10px 15px; /* Add some padding for better appearance */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Add rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: rgb(241, 80, 80); /* Set background color to red on hover */
+    color: #fff; /* Set text color to white on hover for better contrast */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+/* Footer Styles */
+footer {
+    background-color: #4169e1; /* Blue */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed; /* Fixed positioning for sticky footer */
+    bottom: 0; /* Stick footer to the bottom */
+    width: 100%; /* Make footer full width */
+    z-index: 999; /* Ensure it's on top of other elements */
+}
+
+ 
+
+ 
+
+ 
+body {
+    overflow: hidden;
+    overflow-x: hidden; /* Disable horizontal overflow */
+    overflow-y: scroll;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    margin: 0;
+
+    
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer Styles */
+ 
+.appointment-form {
+    
+    color: #000;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(235, 219, 70); /* Blue theme */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000; /* White text */
+    font-size: 18px; /* Classy font size */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px; /* Classy font size */
+    background-color: #fff; /* White background for input fields */
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 12px 20px; /* Increase padding for a more prominent look */
+    background-color: #0056b3; /* Light blue button */
+    color: #fff;
+    border: none;
+    border-radius: 25px; /* Increase border-radius for a rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px; /* Classy font size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    outline: none; /* Remove default focus outline */
+}
+
+button:hover {
+    background-color: #004080; /* Darker blue on hover */
+}
+
+button:active {
+    transform: translateY(1px); /* Add slight downward animation on click */
+}
+
+/* Add animation to the button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button:focus {
+    animation: pulse 1s infinite; /* Apply pulse animation on focus */
+}
+
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px; /* Classy font size */
+    background-color: #fff; /* White background for select dropdown */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.logo img {
+    width: 250px; /* Adjust the size as needed */
+    position: absolute;
+    top: -25px;
+    bottom: auto;
+    padding-bottom: 30%;
+    left: 1px;
+}
+
+
+
